@@ -16,3 +16,14 @@ Here are some ideas to get you started:
 -->
 
 ![header](https://capsule-render.vercel.app/api?type=speech&color=gradient&height=400&section=header&text=Grow%20through%20every%20challenge&fontSize=40&animation=fadeIn)
+<p>
+  <!-- gmail -->
+  <img src="https://img.shields.io/badge/vsrlawlsdud@gmail.com-4CAF50?style=flat-square&logo=gmail&logoColor=white"/>
+</p>
+<p>
+  <!-- Tech Stacks -->
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=Github&logoColor=white"/>
+</p>
+
