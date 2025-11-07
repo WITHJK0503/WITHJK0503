@@ -1,0 +1,97 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0; /* 페이지 여백 제거 */
+    padding: 0; /* 페이지 안쪽 여백 제거 */
+    line-height: 1.6; /* 줄 간격 설정 */
+    background-color: #f9fafb; /* 전체적인 배경색 (가장 연한 회색) */
+    color: #333; /* 기본 글자색 */
+}
+
+/* 🟢 상단 연한 초록색 배경 영역 스타일 */
+.top-green-area {
+    background: #e9ffe0; /* 연한 초록색 (수직 수평으로 JINYOUNG KIM을 만나기 전까지의 배경) */
+    padding-bottom: 2rem; /* 네비게이션 아래 여백 */
+}
+
+header {
+    background: none; /* .top-green-area가 배경색을 담당하므로 배경색 제거 */
+    color: #333; /* 초록색 배경에 잘 보이는 어두운 글자색으로 변경 */
+    padding: 1rem 0 0; /* 상단 패딩은 사진 영역이 가졌으므로 여기는 0으로 시작 */
+    text-align: center; /* 가운데 정렬 */
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0; /* 이름 아래 작은 여백 */
+    font-size: 2rem; /* 글자 크기 */
+    color: #1f2937; /* 이름 글자색을 진하게 설정 */
+}
+
+nav a {
+    color: #1f2937; /* 네비게이션 링크 글자색을 진하게 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    margin: 0 10px; /* 좌우 간격 */
+    font-weight: bold; /* 굵게 */
+}
+
+/* ⚪ 아래 연한 회색 섹션 영역 스타일 */
+section {
+    background-color: #f0f0f0; /* 살짝 연한 회색 */
+    max-width: 100%; /* 전체 너비 사용 */
+    margin: 0; /* 섹션 간 마진 제거 */
+    padding: 2rem 1rem; /* 위아래 패딩으로 공간 확보 */
+    box-sizing: border-box; /* 패딩을 너비/높이에 포함 (전문 용어: 박스 크기 모델) */
+    border-top: 1px solid #ddd; /* 섹션 구분을 위한 얇은 선 */
+}
+
+/* 내부 콘텐츠의 최대 너비 제한 (가독성 향상) */
+#about > *, #projects > *, #contact > * {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project {
+    background: white; /* 프로젝트 박스 배경은 흰색 유지 */
+    padding: 1rem; /* 안쪽 여백 */
+    margin-bottom: 1rem; /* 아래쪽 여백 */
+    border-radius: 12px; /* 모서리 둥글게 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 그림자 효과 */
+}
+
+.project a {
+    color: #2563eb; /* 링크 색상 */
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #e5e7eb; /* 바닥글 배경색 */
+    margin-top: 0; /* 상단 마진 제거 */
+}
+
+/* 상단 사진 영역 스타일 */
+.top-photo-wrapper {
+    width: 100%;
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: flex-start; /* 상단에 정렬 */
+    padding-top: 8px; /* 페이지 최상단과 약간의 간격 */
+}
+
+.top-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%; /* 원형 */
+    object-fit: cover; /* 이미지가 잘리지 않게 채움 */
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* 작은 화면에서 반응형 규칙 (미디어 쿼리) */
+@media (max-width: 420px) { /* 화면 너비 420px 이하일 때 적용 */
+    .top-photo {
+        width: 110px;
+        height: 110px;
+    }
+}
